@@ -1,0 +1,7 @@
+services:
+    djefa_db:
+        image: postgres
+    seq:
+        image: datalust/seq:latest
+volumes:
+    postgres_djefa_db:
