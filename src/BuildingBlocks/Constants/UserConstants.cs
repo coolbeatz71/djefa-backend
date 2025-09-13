@@ -1,0 +1,98 @@
+namespace Djefa.BuildingBlocks.Constants;
+
+/// <summary>
+/// Contains constants related to user entity business rules and constraints.
+/// </summary>
+public static class UserConstants
+{
+    /// <summary>
+    /// Minimum allowed length for the username.
+    /// </summary>
+    public const int MinNameLength = 3;
+
+    /// <summary>
+    /// Maximum allowed length for username.
+    /// </summary>
+    public const int MaxNameLength = 20;
+
+    /// <summary>
+    /// Minimum allowed length for the password.
+    /// </summary>
+    public const int MinPasswordLength = 6;
+
+    /// <summary>
+    /// Default verification status for new local authentication users.
+    /// </summary>
+    public const bool DefaultIsVerified = false;
+
+    /// <summary>
+    /// Default active status for new users.
+    /// </summary>
+    public const bool DefaultIsActive = true;
+
+    /// <summary>
+    /// Default login status for new users.
+    /// </summary>
+    public const bool DefaultIsLoggedIn = false;
+
+    /// <summary>
+    /// Active status when the user account is activated.
+    /// </summary>
+    public const bool ActivatedStatus = true;
+
+    /// <summary>
+    /// Active status when the user account is deactivated.
+    /// </summary>
+    public const bool DeactivatedStatus = false;
+
+    /// <summary>
+    /// Login status when the user is logged in.
+    /// </summary>
+    public const bool LoggedInStatus = true;
+
+    /// <summary>
+    /// Login status when the user is logged out.
+    /// </summary>
+    public const bool LoggedOutStatus = false;
+
+    /// <summary>
+    /// Verification status after email is updated (requires re-verification).
+    /// </summary>
+    public const bool EmailUpdatedVerificationStatus = false;
+
+    /// <summary>
+    /// Verification status after email is updated (requires re-verification).
+    /// </summary>
+    public const bool TelephoneUpdatedVerificationStatus = false;
+
+    /// <summary>
+    /// Maximum allowed length for email addresses (RFC 5321 standard).
+    /// </summary>
+    public const int MaxEmailLength = 254;
+
+    /// <summary>
+    /// Maximum allowed length for partial phone numbers.
+    /// </summary>
+    public const int MaxPartialPhoneNumberLength = 20;
+
+    /// <summary>
+    /// Maximum allowed length for full phone numbers.
+    /// </summary>
+    public const int MaxFullPhoneNumberLength = 20;
+
+    /// <summary>
+    /// OTP expiration time in minutes.
+    /// </summary>
+    public const int OtpExpirationMinutes = 60;
+
+    /// <summary>
+    /// Maximum number of OTP verification attempts.
+    /// </summary>
+    public const int MaxOtpAttempts = 3;
+
+    /// <summary>
+    /// Length of generated OTP codes.
+    /// </summary>
+    public const int OtpCodeLength = 6;
+}
+
